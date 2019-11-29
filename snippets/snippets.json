@@ -68,7 +68,7 @@
             "@elseif"
         ],
         "body": [
-            "@elseif (${1:$${2:condition}})$0"
+            "@elseif(${1:$${2:condition}})$0"
         ]
     },
     "foreach": {
@@ -77,7 +77,7 @@
             "@foreach"
         ],
         "body": [
-            "@foreach (${1:$${2:iterable}} as ${3:$${4:key}}${5: => ${6:$${7:value}}})",
+            "@foreach(${1:$${2:iterable}} as ${3:$${4:key}}${5: => ${6:$${7:value}}})",
             "\t$0",
             "@endforeach"
         ]
