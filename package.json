@@ -1,0 +1,61 @@
+{
+    "name": "laravel-blade-vscode",
+    "displayName": "Laravel Blade",
+    "description": "Laravel Blade Snippets & Highlighter support Visual Studio Code",
+    "publisher": "amirmarmul",
+    "version": "1.0.0",
+    "keywords": [
+        "laravel",
+        "blade",
+        "snippet",
+        "highlighter"
+    ],
+    "author": {
+        "name": "Amir Marmul",
+        "email": "amiruddinmarmul@gmail.com"
+    },
+    "homepage": "https://github.com/amirmarmul/laravel-blade-vscode",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/amirmarmul/laravel-blade-vscode"
+    },
+    "bugs": {
+        "url": "https://github.com/amirmarmul/laravel-blade-vscode/issues"
+    },
+    "icon": "assets/icon.png",
+    "engines": {
+        "vscode": "^1.40.0"
+    },
+    "categories": [
+        "Programming Languages",
+        "Snippets"
+    ],
+    "contributes": {
+        "languages": [
+            {
+                "id": "blade",
+                "aliases": [
+                    "Blade",
+                    "blade"
+                ],
+                "extensions": [
+                    ".blade.php"
+                ],
+                "configuration": "./blade.configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "blade",
+                "scopeName": "text.html.php.blade",
+                "path": "./syntaxes/blade.tmLanguage.json"
+            }
+        ],
+        "snippets": [
+            {
+                "language": "blade",
+                "path": "./snippets/snippets.json"
+            }
+        ]
+    }
+}
