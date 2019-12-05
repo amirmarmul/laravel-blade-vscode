@@ -4,6 +4,16 @@ Laravel Blade Snippets & Highlighter for VS Code.
 
 Converted from [language-blade](https://github.com/jawee/language-blade).
 
+## User Setting
+
+Enable html emmet:
+
+>```json
+>"emmet.includeLanguages": {
+>   "blade": "html"
+>},
+>```
+
 ## Features
 - Syntax highlighter
 - Blade snippets
