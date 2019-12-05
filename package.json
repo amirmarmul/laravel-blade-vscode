@@ -57,8 +57,5 @@
                 "path": "./snippets/snippets.json"
             }
         ]
-    },
-    "activationEvents": [
-        "onLanguage:blade"
-    ]
+    }
 }

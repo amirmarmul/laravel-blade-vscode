@@ -2,8 +2,6 @@
 
 Laravel Blade Snippets & Highlighter for VS Code. 
 
-This extension will be active when opening a blade (.blade.php) file.
-
 Converted from [language-blade](https://github.com/jawee/language-blade).
 
 ## Features
