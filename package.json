@@ -3,7 +3,7 @@
     "displayName": "Laravel Blade",
     "description": "Laravel Blade Snippets & Highlighter support Visual Studio Code",
     "publisher": "amirmarmul",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "keywords": [
         "laravel",
         "blade",
@@ -24,7 +24,7 @@
     },
     "icon": "assets/icon.png",
     "engines": {
-        "vscode": "^1.40.0"
+        "vscode": "^1.39.0"
     },
     "categories": [
         "Programming Languages",
