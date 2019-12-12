@@ -29,6 +29,10 @@ Calling out known issues can help limit users opening duplicate issues against y
 
 Users appreciate release notes as you update your extension.
 
+### 1.0.3
+
+- Added some new directive based on Laravel 6.x
+
 ### 1.0.2
 
 - Update README.md
