@@ -139,15 +139,6 @@
             "@endforelse"
         ]
     },
-    "include": {
-        "description": "Includes a sub-view.",
-        "prefix": [
-            "@include"
-        ],
-        "body": [
-            "@include('${1:view}')$0"
-        ]
-    },
     "lang": {
         "description": "Displays a localized string.",
         "prefix": [
@@ -261,6 +252,17 @@
             "@endcomponent"
         ]
     },
+    "componentFirst": {
+        "description": "Instruct to load the first view that exists from a given array of possible views for the component.",
+        "prefix": [
+            "@component"
+        ],
+        "body": [
+            "@componentFirst(['${1:custom.component}', '${2:component}'])",
+            "\t$0",
+            "@endcomponent"
+        ]
+    },
     "slot": {
         "description": "Injects content into slot variable.",
         "prefix": [
@@ -323,13 +325,49 @@
             "@break${1:(${2:$${3:condition}})}$0"
         ]
     },
-    "includeif": {
-        "description": "Includes a view if present.",
+    "include": {
+        "description": "Includes a sub-view.",
         "prefix": [
-            "@includeif"
+            "@include"
         ],
         "body": [
-            "@includeif('${1:view}', ${2:$${3:data}})$0"
+            "@include('${1:view}')$0"
+        ]
+    },
+    "includeIf": {
+        "description": "Includes a view if present.",
+        "prefix": [
+            "@include"
+        ],
+        "body": [
+            "@includeIf('${1:view}', ['${2:some}' => '${3:data}'])$0"
+        ]
+    },
+    "includeWhen": {
+        "description": "Includes a view if a given boolean expression evaluates to true.",
+        "prefix": [
+            "@include"
+        ],
+        "body": [
+            "@includeWhen(${1:$$boolean}, '${2:view}', ['${3:some}' => '${4:data}'])$0"
+        ]
+    },
+    "includeUnless": {
+        "description": "Includes a view if a given boolean expression evaluates to false.",
+        "prefix": [
+            "@include"
+        ],
+        "body": [
+            "@includeUnless(${1:$$boolean}, '${2:view}', ['${3:some}' => '${4:data}'])$0"
+        ]
+    },
+    "includeFirst": {
+        "description": "Includes a view the first view that exists from a given array of views.",
+        "prefix": [
+            "@include"
+        ],
+        "body": [
+            "@includeFirst(['${1:custom.view}', '${2:view}'], ['${3:some}' => '${4:data}'])$0"
         ]
     },
     "inject": {
@@ -347,7 +385,7 @@
             "@can"
         ],
         "body": [
-            "@can('${1:update}', ${2:$post})",
+            "@can('${1:update}', ${2:$$user})",
             "\t$0",
             "@endcan"
         ]
@@ -358,7 +396,7 @@
             "@cannot"
         ],
         "body": [
-            "@cannot('${1:update}', ${2:$post})",
+            "@cannot('${1:update}', ${2:$$user})",
             "\t$0",
             "@endcannot"
         ]
@@ -397,12 +435,30 @@
         ]
     },
     "method": {
-        "description": "Defines a hidden _method field to spoof HTTP verbs",
+        "description": "Defines a hidden _method field to spoof HTTP verbs.",
         "prefix": [
             "@method"
         ],
         "body": [
             "@method('${1:put}')$0"
+        ]
+    },
+    "each": {
+        "description": "Defines a rendering views for collections.\n\n- The first argument is the view partial to render for each element in the array or collection.\n- The second argument is the array or collection you wish to iterate over\n- Third argument is the variable name that will be assigned to the current iteration within the view.\n- This fourth argument is the view that will be rendered if the given array is empty.",
+        "prefix": [
+            "@each"
+        ],
+        "body": [
+            "@each('${1:view.name}', ${2:$$jobs}, '${3:job}', '${4:view.empty}')$0"
+        ]
+    },
+    "json": {
+        "description": "Defines a rendering an array to JSON.\n\nThis directive accepts the same arguments as PHP's json_encode function.",
+        "prefix": [
+            "@json"
+        ],
+        "body": [
+            "@json(${1:$$array})$0"
         ]
     }
 }
