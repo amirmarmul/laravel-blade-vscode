@@ -395,5 +395,14 @@
             "\t$0",
             "@enderror"
         ]
+    },
+    "method": {
+        "description": "Defines a hidden _method field to spoof HTTP verbs",
+        "prefix": [
+            "@method"
+        ],
+        "body": [
+            "@method('${1:put}')$0"
+        ]
     }
 }
