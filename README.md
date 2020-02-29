@@ -1,6 +1,6 @@
-# Laravel Blade Extension
+# Laravel Blade
 
-Laravel Blade Snippets & Highlighter for VS Code. 
+Laravel Blade Snippets, Syntax Highlighting and Formatting for VS Code. 
 
 Converted from [language-blade](https://github.com/jawee/language-blade).
 
@@ -17,6 +17,7 @@ Enable html emmet:
 ## Features
 - Syntax highlighter
 - Blade snippets
+- Blade formatting
 
 ## Screenshoot 
 ![Screenshoot](https://raw.githubusercontent.com/amirmarmul/laravel-blade-vscode/master/assets/screenshot.png)
@@ -28,6 +29,11 @@ Calling out known issues can help limit users opening duplicate issues against y
 ## Release Notes
 
 Users appreciate release notes as you update your extension.
+
+### 1.0.4
+
+- Added blade formatting 
+- Change codebase to newest vscode extension template
 
 ### 1.0.3
 
