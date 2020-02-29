@@ -20,7 +20,7 @@ Enable html emmet:
 - Blade formatting
 
 ## Screenshoot 
-![Screenshoot](resources/images/screenshot.png)
+![Screenshoot](images/screenshot.png)
 
 ## Known Issues
 
@@ -30,7 +30,11 @@ Calling out known issues can help limit users opening duplicate issues against y
 
 Users appreciate release notes as you update your extension.
 
-### 1.0.4
+### 2.0.1
+
+- Update README.md file
+
+### 2.0.0
 
 - Added blade formatting 
 - Change codebase to newest vscode extension template

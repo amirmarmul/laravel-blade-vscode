@@ -3,7 +3,7 @@
     "displayName": "Laravel Blade",
     "description": "Snippets, Syntax Highlighting and Formatting for VS Code",
     "publisher": "amirmarmul",
-    "version": "1.0.4",
+    "version": "2.0.1",
     "author": {
         "name": "Amir Marmul",
         "email": "amiruddinmarmul@gmail.com"
@@ -16,7 +16,7 @@
     "bugs": {
         "url": "https://github.com/amirmarmul/laravel-blade-vscode/issues"
     },
-    "icon": "resources/images/icon.png",
+    "icon": "images/icon.png",
     "engines": {
         "vscode": "^1.39.0"
     },
@@ -34,7 +34,7 @@
     "activationEvents": [
         "onLanguage:blade"
     ],
-    "main": "./out/extension.js",
+    "main": "./dist/extension.js",
     "contributes": {
         "languages": [
             {
@@ -46,20 +46,20 @@
                 "extensions": [
                     ".blade.php"
                 ],
-                "configuration": "./resources/languages/blade.configuration.json"
+                "configuration": "./src/languages/blade.configuration.json"
             }
         ],
         "grammars": [
             {
                 "language": "blade",
                 "scopeName": "text.html.php.blade",
-                "path": "./resources/syntaxes/blade.tmLanguage.json"
+                "path": "./src/syntaxes/blade.tmLanguage.json"
             }
         ],
         "snippets": [
             {
                 "language": "blade",
-                "path": "./resources/snippets/snippets.json"
+                "path": "./src/snippets/snippets.json"
             }
         ],
         "configuration": {
