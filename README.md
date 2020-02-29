@@ -20,7 +20,7 @@ Enable html emmet:
 - Blade formatting
 
 ## Screenshoot 
-![Screenshoot](https://raw.githubusercontent.com/amirmarmul/laravel-blade-vscode/master/assets/screenshot.png)
+![Screenshoot](resources/images/screenshot.png)
 
 ## Known Issues
 
