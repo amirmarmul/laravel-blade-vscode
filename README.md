@@ -30,6 +30,10 @@ Calling out known issues can help limit users opening duplicate issues against y
 
 Users appreciate release notes as you update your extension.
 
+### 2.0.2
+
+- Add support to vscode 1.37
+
 ### 2.0.1
 
 - Update README.md file
