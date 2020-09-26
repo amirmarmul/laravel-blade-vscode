@@ -244,7 +244,7 @@
                     ]
                 },
                 {
-                    "begin": "(?x)\n(?<![A-Za-z0-9_@]) # Prepended @ or literal character escapes the sequence\n(\n  @\n  (?i: # Ordering not important as we everything will be matched up to opening parentheses\n   append\n  |csrf\n  |default\n  |else\n  |endauth\n  |endcan\n  |endcanany\n  |endcannot\n  |endcomponent\n  |endcomponentfirst\n  |endempty\n  |enderror\n  |endfor\n  |endforeach\n  |endforelse\n  |endguest\n  |endif\n  |endisset\n  |endlang\n  |endprepend\n  |endpush\n  |endsection\n  |endslot\n  |endswitch\n  |endunless\n  |endwhile\n  |overwrite\n  |parent\n  |show\n  |stop\n  )\n  [\\t ]* # Whitespace between name and parentheses\n)\n(\\() # Followed by opening parentheses",
+                    "begin": "(?x)\n(?<![A-Za-z0-9_@]) # Prepended @ or literal character escapes the sequence\n(\n  @\n  (?i: # Ordering not important as we everything will be matched up to opening parentheses\n   append\n  |csrf\n  |default\n  |else\n  |endauth\n  |endcan\n  |endcanany\n  |endcannot\n  |endcomponent\n  |endcomponentfirst\n  |endempty\n  |enderror\n  |endfor\n  |endforeach\n  |endforelse\n  |endguest\n  |endif\n  |endisset\n  |endlang\n |endonce\n  |endprepend\n  |endpush\n  |endsection\n  |endslot\n  |endswitch\n  |endunless\n  |endwhile\n  |once\n  |overwrite\n  |parent\n  |show\n  |stop\n  )\n  [\\t ]* # Whitespace between name and parentheses\n)\n(\\() # Followed by opening parentheses",
                     "beginCaptures": {
                         "1": {
                             "name": "keyword.blade"
@@ -268,7 +268,7 @@
                     ]
                 },
                 {
-                    "match": "(?x)\n(?<![A-Za-z0-9_@]) # Prepended @ or literal character escapes the sequence\n@\n(?: # Ordering not important as we everything will be matched up to word boundary\n (?i)append\n|(?i)auth\n|(?i)break\n|(?i)continue\n|(?i)csrf\n|(?i)default\n|(?i)else\n|(?i)elseauth\n|(?i)elseguest\n|(?i)empty\n|(?i)endauth\n|(?i)endcan\n|(?i)endcanany\n|(?i)endcannot\n|(?i)endcomponent\n|(?i)endcomponentfirst\n|(?i)endempty\n|(?i)enderror\n|(?i)endfor\n|(?i)endforeach\n|(?i)endforelse\n|(?i)endguest\n|(?i)endif\n|(?i)endisset\n|(?i)endlang\n|(?i)endprepend\n|(?i)endpush\n|(?i)endsection\n|(?i)endslot\n|(?i)endswitch\n|(?i)endunless\n|endverbatim\n|(?i)endwhile\n|(?i)guest\n|(?i)lang\n|(?i)overwrite\n|(?i)parent\n|(?i)show\n|(?i)stop\n|verbatim\n)\n\\b",
+                    "match": "(?x)\n(?<![A-Za-z0-9_@]) # Prepended @ or literal character escapes the sequence\n@\n(?: # Ordering not important as we everything will be matched up to word boundary\n (?i)append\n|(?i)auth\n|(?i)break\n|(?i)continue\n|(?i)csrf\n|(?i)default\n|(?i)else\n|(?i)elseauth\n|(?i)elseguest\n|(?i)empty\n|(?i)endauth\n|(?i)endcan\n|(?i)endcanany\n|(?i)endcannot\n|(?i)endcomponent\n|(?i)endcomponentfirst\n|(?i)endempty\n|(?i)enderror\n|(?i)endfor\n|(?i)endforeach\n|(?i)endforelse\n|(?i)endguest\n|(?i)endif\n|(?i)endisset\n|(?i)endlang\n|(?i)endonce\n|(?i)endprepend\n|(?i)endpush\n|(?i)endsection\n|(?i)endslot\n|(?i)endswitch\n|(?i)endunless\n|endverbatim\n|(?i)endwhile\n|(?i)guest\n|(?i)lang\n|(?i)once\n|(?i)overwrite\n|(?i)parent\n|(?i)show\n|(?i)stop\n|verbatim\n)\n\\b",
                     "name": "keyword.blade"
                 },
                 {
