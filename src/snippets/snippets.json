@@ -375,5 +375,18 @@
         "body": [
             "@json($${1:array})$0"
         ]
+    },
+    "switch": {
+        "description": "Switch Statements.",
+        "prefix": "@switch",
+        "body": [
+            "@switch($${0:value})",
+            "\t@case(${1:value})",
+            "\t\t${2}",
+            "\t\t@break",
+            "\t$@default",
+            "\t\t${3}",
+            "@endswitch"
+        ]
     }
 }
