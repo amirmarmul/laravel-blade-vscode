@@ -1,7 +1,7 @@
 # Laravel Blade
 
-![Visual Studio Marketplace Downloads](https://img.shields.io/visual-studio-marketplace/d/amirmarmul.laravel-blade-vscode?label=vscode%20downloads)
-![Open VSX Downloads](https://img.shields.io/open-vsx/dt/amirmarmul/laravel-blade-vscode?label=open-vsx%20downloads)
+[![Visual Studio Marketplace Downloads](https://img.shields.io/visual-studio-marketplace/d/amirmarmul.laravel-blade-vscode?label=vscode%20downloads)](https://marketplace.visualstudio.com/items?itemName=amirmarmul.laravel-blade-vscode)
+[![Open VSX Downloads](https://img.shields.io/open-vsx/dt/amirmarmul/laravel-blade-vscode?label=open-vsx%20downloads)](https://open-vsx.org/extension/amirmarmul/laravel-blade-vscode)
 
 Laravel Blade Snippets, Syntax Highlighting and Formatting for VS Code. 
 
